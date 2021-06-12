@@ -1,0 +1,35 @@
+/********************** global *********************/
+/********************** logo *********************/
+.logo{
+	width: 89%;
+	display: flex;
+	position: relative;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.title{
+	font-size: 5em;
+	color: var(--main-font-color);
+}
+.title:nth-child(1){
+	font-size: 5em;
+letter-spacing: 0.04em;
+font-weight: 500;
+}
+.title:nth-child(3){
+	font-size: 6em;
+letter-spacing: 0.04em;
+}
+.main-circle{
+	width: 2em;
+	height: 2em;
+	border-radius: 50%;
+	background-color: var(--main-point-color);
+}
+/********************** gallery-wrapper *********************/
+/********************** advice-wrapper *********************/
+/**********************footer-wrapper *********************/
+/********************** 글로벌 설정 *********************/
+/********************** 글로벌 설정 *********************/
+/********************** 글로벌 설정 *********************/
+/********************** 글로벌 설정 *********************/

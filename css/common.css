@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700;800&family=Noto+Sans+KR:wght@300;400;500;700&family=Song+Myung&display=swap');
+/* font-family: 'Song Myung', serif; */
+/* font-family: 'Nanum Myeongjo', serif; */
+/* font-family: 'Noto Sans KR', sans-serif; */
+/********************** 글로벌 설정 *********************/
+:root {
+  --main-bg-color: rgb(253, 253, 249);
+  --main-point-color:rgb(255, 136, 0);
+  --main-font-color:rgb(61, 61, 58);
+}
+
+
+html,
+body {
+    font-size: 16px;
+   font-family: 'Noto Sans KR', sans-serif;
+    background-color: var(--main-bg-color);
+}
+.wrapper {
+    width: 1368px;
+    margin: auto;
+    position: relative;
+}
+.wrapper-lg {
+    width: 1568px;
+    margin: auto;
+    position: relative;
+}
+.wrapper-xl {
+    width: 1768px;
+    margin: auto;
+    position: relative;
+}
+.wrapper-all {
+    max-width: 2560px;
+    margin: auto;
+    position: relative;
+}
+
+
+/********************** 반응형 설정 *********************/
+/********************** 반응형 설정 *********************/
+/********************** 반응형 설정 *********************/
+/********************** 반응형 설정 *********************/
+/********************** 반응형 설정 *********************/
+/********************** 반응형 설정 *********************/
+/********************** 반응형 설정 *********************/
+/********************** 반응형 설정 *********************/
+@media (max-width: 1799px) {
+    .wrapper-xl {
+        width: calc(100% - 2rem);
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width: 1599px) {
+    .wrapper-lg {
+        width: calc(100% - 2rem);
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width: 1399px) {
+    .wrapper {
+        width: calc(100% - 2rem);
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 575px) {
+}
