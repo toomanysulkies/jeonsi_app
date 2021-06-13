@@ -1,53 +1,39 @@
-
-/* label {
-  pointer-events: none;
-} */
-.toggle__input {
-  display: none;
+/*****************global **************/
+.toggle{
+display: flex;
+justify-content: space-around;
 }
-/* label .input:checked + .view-option__switch {
-  box-shadow: 0 8px 14px 0 rgba(18, 51, 215, 0.12);
-} */
-.toggle__input:checked + .view-option__switch .view-option__circle {
-  right: 0;
-  background-color:var(--main-font-color);
+.toggle__switch{
+	width: 4em;
+margin: 1em;
+border:1px solid hotpink;
+padding: 0.5em;
+/* overflow: hidden; */
+position: relative;
+font-size: 1em;
 }
-.toggle__input:checked ~ .notification > .selected:before {
-  content: "마감순";
-}
-.view-option__switch {
-  width: 3em;
-  height: 1em;
-  background-color: #ffffff;
-	border:1px solid rgb(161, 161, 161);
-  border-radius: 999px;
-  margin: auto;
-  cursor: pointer;
-  pointer-events: all;
-	position: relative;
-	
-  /* box-shadow: 0 8px 14px 0 rgba(215, 74, 18, 0.12); */
-}
-
- .view-option__circle {
-  width: 1.15em;
-  height: .75em;  
-  position: absolute;
-  top:10%;
-
-  transform: translateX(50%);
-  background-color:  var(--main-point-color);
-  transition: transform 1.5s ease-out;
-  border-radius: 999px;
-}
- .notification {
-  width: 100%;
+.selected{
+	cursor: pointer;
 	display: flex;
 	justify-content: center;
 }
- .notification .selected:before {
-  content: "최신순";
-  font-size: 0.75em;
- 
+.not-selected{
+	margin: .5em;
 }
+.select-things{
+	text-align: center;
+background-color: #fff;
+    position: absolute;
+		left: -10%;
+    width: 109%;
+   margin: .4em;
+    cursor: pointer;
+    display: none;
+    z-index: 1;
+}
+
+/**********option--late***********/
+
+/***********option--map*************/
+
 

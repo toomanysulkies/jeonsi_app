@@ -63,13 +63,13 @@ function scrollSpy(el, cls, _gap) {
 
 /*************** getSwiper *****************/
 /*
-- cls : '.promo-wrapper
+- cls : 
 - opt 
 {
 	pager: true,
 	navi: true,
 	auto: true,
-	autoEl: '.slide-stage'
+	autoEl: '.gallery__view'
 	delay: 3000,
 	loop: true,
 	space: 40,
@@ -78,7 +78,7 @@ function scrollSpy(el, cls, _gap) {
 */
 function getSwiper(el, opt) {
     var opt = opt || {};
-    var autoEl = el + ' ' + (opt.autoEl || '.slide-stage');
+    var autoEl = el + ' ' + (opt.autoEl || '.gallery__view');
     var pagination =
         opt.pager === false
             ? false
@@ -143,7 +143,7 @@ function getSwiper(el, opt) {
         speed: opt.speed || 500,
         slidesPerView: opt.break && opt.break > 5 ? opt.break - 4 : 1,
         // slidesPerView: opt.break ? opt.break : 1,
-        spaceBetween: opt.space === undefined ? 40 : opt.space,
+        spaceBetween: opt.space === undefined ? 1 : opt.space,
         breakpoints: breakpoints,
     });
 

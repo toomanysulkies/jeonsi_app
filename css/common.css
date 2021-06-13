@@ -10,6 +10,7 @@
 }
 html,
 body {
+    height: 1000vh;
     font-size: 16px;
    font-family: 'Noto Sans KR', sans-serif;
     background-color: var(--main-bg-color);
@@ -34,7 +35,27 @@ body {
     margin: auto;
     position: relative;
 }
+.bt-slide {
+    background-color:var(--main-font-color);
+    color: var(--main-point-color);
+    width: 30px;
+    height:30px;
+    position: absolute;
+    top:150px;
+    z-index: 99;
+    border-radius: 50%;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bt-slide.left {
+    left:55px;
+}
 
+.bt-slide.right {
+    right:55px;
+}
 /********************** header *********************/
 .header{
 	width: 100%;
@@ -71,16 +92,23 @@ letter-spacing: 0.04em;
 	border-radius: 50%;
 	background-color: var(--main-point-color);
 }
-/********************** main*********************/
-.main{
-    width: 100%;
-    height: auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+
+
+/**************navi ***********/
+.navi{
+   
+	width: 100%;
+	border: 1px solid red;
+	/* padding: .5em 0; */
+	
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--main-font-color);
+    z-index: 3;
+    
 }
 
-/********************** 반응형 설정 *********************/
 
 /********************** 반응형 설정 *********************/
 /********************** 반응형 설정 *********************/
