@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="../css/base.css">
 	<link rel="stylesheet" href="../css/common.css">
 	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/toggle.css">
 	<script src="../js/jquery-3.5.1.min.js"></script>
 	<script src="../js/swiper-bundle.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
@@ -28,19 +29,90 @@
 
 <body>
 	<div class="wrapper-all">
-		<header class="logo">
-			<h2 class="title">전시</h2>
-			<button>
-				<div class="main-circle"></div>
-			</button>
-			<h2 class="title">APP</h2>
-
+		<header class="header--front">
+			<div class="header__logo">
+				<h2 class="header__title">전시</h2>
+				<button>
+					<div class="header__circle"></div>
+				</button>
+				<h2 class="header__title">APP</h2>
+			</div>
 		</header>
-		<div class="gallery-wrapper wrapper"></div>
-		<div class="advice-wrapper wrapper"></div>
-		<div class="footer-wrapper wrapper"></div>
+		<header class="header">
+			<div class="header__logo">
+				<h2 class="header__title">전시</h2>
+				<button>
+					<div class="header__circle"></div>
+				</button>
+				<h2 class="header__title">APP</h2>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="gallery">
+				<div class="gallery__info">
+					<div class="gallery__title">갤러리</div>
+					<div class="view-option option--late">
+						<label for="toggle">
+							<input class="toggle__input" type="checkbox" id="toggle" />
+							<div class="view-option__switch">
+								<span class="view-option__circle"></span>
+							</div>
+							<p class="notification"> <span class="selected"></span></p>
+						</label>
+						</class>
+					</div>
+				</div>
+
+
+			</div>
+			<div class="gallery__view">
+				<ul class="gallery__grid">
+					<li class="gallery__slide">
+						<div class="gallery__image"></div>
+						<div class="gallery__desc"></div>
+					</li>
+					<li class="gallery__slide">
+						<div class="gallery__image"></div>
+						<div class="gallery__desc"></div>
+					</li>
+					<li class="gallery__slide">
+						<div class="gallery__image"></div>
+						<div class="gallery__desc"></div>
+					</li>
+					<li class="gallery__slide">
+						<div class="gallery__image"></div>
+						<div class="gallery__desc"></div>
+					</li>
+					<li class="gallery__slide">
+						<div class="gallery__image"></div>
+						<div class="gallery__desc"></div>
+					</li>
+					<li class="gallery__slide">
+						<div class="gallery__image"></div>
+						<div class="gallery__desc"></div>
+					</li>
+					<li class="gallery__slide">
+						<div class="gallery__image"></div>
+						<div class="gallery__desc"></div>
+					</li>
+					<li class="gallery__slide">
+						<div class="gallery__image"></div>
+						<div class="gallery__desc"></div>
+					</li>
+				</ul>
+
+			</div>
+
+
+			<div class="advice"></div>
+			<div class="footer"></div>
+		</main>
 	</div>
 
+
 </body>
+<!-- <script src="../js/index.js"></script> -->
+<script src="../js/common.js"></script>
 
 </html>
