@@ -96,17 +96,13 @@ letter-spacing: 0.04em;
 
 /**************navi ***********/
 .navi{
-   
 	width: 100%;
 	border: 1px solid red;
 	/* padding: .5em 0; */
-	
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: var(--main-font-color);
-    z-index: 3;
-    
 }
 
 

@@ -1,0 +1,22 @@
+body{
+	height:100vh;
+}
+
+.form-title{
+	text-align: center;
+	color: var(--main-font-color);
+}
+
+.form{
+	margin:4em 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.form-wrapper{
+	width: 40%;
+	border: 1px solid red;
+}
