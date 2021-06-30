@@ -4,15 +4,15 @@
 /* font-family: 'Noto Sans KR', sans-serif; */
 /********************** 글로벌 설정 *********************/
 :root {
-  --main-bg-color: #FFFbf4;
-  --main-point-color:rgb(255, 136, 0);
-  --main-font-color:rgb(61, 61, 58);
+    --main-bg-color: #fcf7f4;
+    --main-point-color: rgb(255, 136, 0);
+    --main-font-color: rgb(67, 64, 62);
 }
 html,
 body {
     height: 1000vh;
     font-size: 16px;
-   font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     background-color: var(--main-bg-color);
 }
 .wrapper {
@@ -36,12 +36,12 @@ body {
     position: relative;
 }
 .bt-slide {
-    background-color:var(--main-font-color);
+    background-color: var(--main-font-color);
     color: var(--main-point-color);
     width: 30px;
-    height:30px;
+    height: 30px;
     position: absolute;
-    top:150px;
+    top: 150px;
     z-index: 99;
     border-radius: 50%;
     font-size: 1.2em;
@@ -50,61 +50,60 @@ body {
     align-items: center;
 }
 .bt-slide.left {
-    left:55px;
+    left: 55px;
 }
 
 .bt-slide.right {
-    right:55px;
+    right: 55px;
 }
 /********************** header *********************/
-.header{
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin: 10em 0;
-	transform: scale(1);
-  
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10em 0;
+    transform: scale(1);
 }
-.header__logo{
-	width:80%;
-	display: flex;
-	position: relative;
-	justify-content: space-evenly;
-	align-items: center;
+.header__logo {
+    width: 50%;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
 }
-.header__title{
-	font-size: 7em;
-	color: var(--main-font-color);
+.header__title {
+    font-weight: 400;
+    font-size: 7em;
+    color: var(--main-font-color);
 }
-.header__title:nth-child(1){
-letter-spacing: 0.04em;
-font-weight: 500;
+.header__title:nth-child(1) {
+    letter-spacing: 0.08em;
 }
-.header__title:nth-child(3){
-	font-size: 8em;
-letter-spacing: 0.04em;
+.header__title:nth-child(3) {
+    font-weight: bolder
+    font-size: 8em;
+    letter-spacing: 0.01em;
 }
-.header__circle{
-	width: 3em;
-	height: 3em;
-	border-radius: 50%;
-	background-color: var(--main-point-color);
+.header__circle {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    margin: 0 2em;
+    background-color: var(--main-point-color);
 }
-
 
 /**************navi ***********/
-.navi{
-	width: 100%;
-	border: 1px solid red;
-	/* padding: .5em 0; */
+.navi {
+    width: 100%;
+    /* border: 1px solid red;/ */
+    /* padding: .5em 0; */
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: var(--main-font-color);
 }
-
 
 /********************** 반응형 설정 *********************/
 /********************** 반응형 설정 *********************/
