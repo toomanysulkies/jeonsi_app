@@ -29,19 +29,25 @@
 </head>
 
 <body>
-	<div class="wrapper-all">
-		<!------------header loading-header ------------>
-		<header class="loading-header">
-			<div class="header__logo">
-				<h2 class="header__title">전시</h2>
-				<button>
-					<div class="header__circle"></div>
-				</button>
-				<h2 class="header__title">APP</h2>
-			</div>
-		</header>
+
+	<!------------header loading-header ------------>
+	<header class="loading-header">
+		<div class="header__logo">
+			<h2 class="header__title">전시</h2>
+			<button>
+				<div class="header__circle"></div>
+			</button>
+			<h2 class="header__title">APP</h2>
+		</div>
+	</header>
+
+	<!--basket-->
+	<div class="basket"></div>
+
+	<div class="main">
 		<!-----------------header----------------->
 		<header class="header">
+			<div class="header__nav"><i class="bi bi-file-earmark"></i></div>
 			<div class="header__logo">
 				<h2 class="header__title">전시</h2>
 				<button>
@@ -51,191 +57,51 @@
 			</div>
 		</header>
 
+		<!--view-->
+		<div class="view"></div>
 
-		<main class="main">
-			<!-------------main > gallery--------------->
-			<div class="gallery">
-				<div class="gallery-wrapper">
-					<!--gallery navi-->
-					<div class="gallery-navi navi">
-						<div class="navi__title">현재 전시</div>
-						<div class="toggle option-toggle">
-							<div class="toggle--late">
-								<li class="toggle__switch">
-									<div class="selected"><span>최신순</span> </div>
-									<div class="select-things">
-										<div class="not-selected">마감순</div>
-									</div>
-								</li>
-							</div>
-							<div class="toggle--map">
-								<li class="toggle__switch">
-									<div class="selected"><span>전체보기</span> </div>
-									<div class="select-things">
-										<div class="not-selected">종로</div>
-										<div class="not-selected">마포</div>
-										<div class="not-selected">영등포</div>
-										<div class="not-selected">관악</div>
-										<div class="not-selected">서초</div>
-										<div class="not-selected">강남</div>
-										<div class="not-selected">강동</div>
-										<div class="not-selected">강북</div>
-									</div>
-								</li>
 
-							</div>
+		<!--grid-->
+		<div class="grid">
+			<div class="swiper-container">
+				<ul class="grid__gallery swiper-wrapper ratio-wrap">
+					<li class="grid__slide swiper-slide">
+						<div class="grid__image"><img src="../img/index/김슬기_1.jpg" alt="작품사진"></div>
+						<div class="grid__desc">
+							<div class=grid__title">SF 산신할머니</div>
+							<div class="grid__artist">김슬기</div>
+							<div class="grid__location">오시선</div>
 						</div>
-						<div class="manifier option-manify">
-							<i class="manifier-in bi bi-zoom-in"></i>
+					</li>
+					<li class="grid__slide swiper-slide">
+						<div class="grid__image"><img src="../img/index/김슬기_1.jpg" alt="작품사진"></div>
+						<div class="grid__desc">
+							<div class=grid__title">SF 산신할머니</div>
+							<div class="grid__artist">김슬기</div>
+							<div class="grid__location">오시선</div>
 						</div>
-
-					</div>
-					<div class="gallery__view">
-						<div class="swiper-container">
-							<ul class="galler__view__grid swiper-wrapper ratio-wrap">
-								<li class="gallery__view__slide swiper-slide">
-									<div class="gallery__view__image"><img src="../img/index/김슬기_1.jpg" alt="작품사진"></div>
-									<div class="gallery__view__desc">
-										<div class="gallery__view__title">SF 산신할머니</div>
-										<div class="gallery__view__artist">김슬기</div>
-										<div class="gallery__view__location">오시선</div>
-									</div>
-								</li>
-								<li class="gallery__view__slide swiper-slide">
-									<div class="gallery__view__image"><img src="../img/index/김슬기9.jpg" alt="작품사진"></div>
-									<div class="gallery__view__desc">
-										<div class="gallery__view__title">SF 산신할머니</div>
-										<div class="gallery__view__artist">김슬기</div>
-										<div class="gallery__view__location">오시선</div>
-									</div>
-								</li>
-								<li class="gallery__view__slide swiper-slide">
-									<div class="gallery__view__image"><img src="../img/index/김슬기_3.jpg" alt="작품사진"></div>
-									<div class="gallery__view__desc">
-										<div class="gallery__view__title">SF 산신할머니</div>
-										<div class="gallery__view__artist">김슬기</div>
-										<div class="gallery__view__location">오시선</div>
-									</div>
-								</li>
-
-
-
-							</ul>
-
+					</li>
+					<li class="grid__slide swiper-slide">
+						<div class="grid__image"><img src="../img/index/김슬기_1.jpg" alt="작품사진"></div>
+						<div class="grid__desc">
+							<div class=grid__title">SF 산신할머니</div>
+							<div class="grid__artist">김슬기</div>
+							<div class="grid__location">오시선</div>
 						</div>
-
-					</div>
-				</div> <i class="bt-slide left bi-chevron-left"></i>
-				<i class="bt-slide right bi-chevron-right"></i>
+					</li>
+				</ul>
 			</div>
-
-
-
-
-			<!-------------main > basket--------------->
-			<div class="basket">
-				<div class="basket-wrapper">
-					<div class="basket__board"></div>
-				</div>
-			</div>
-
-
-
-
-			<!---------------main >advice------------->
-			<div class="advice">
-				<div class="advice-wrapper">
-					<div class="advice__map divide">
-						<div class="advice-navi navi">
-							<div class="navi__title">지도로 보기</div>
-							<div class="toggle option-toggle">
-								<div class="toggle--late">
-									<li class="toggle__switch">
-										<div class="selected"><span>최신순</span> </div>
-										<div class="select-things">
-											<div class="not-selected">마감순</div>
-										</div>
-									</li>
-								</div>
-								<div class="toggle--map">
-									<li class="toggle__switch">
-										<div class="selected"><span>전체보기</span> </div>
-										<div class="select-things">
-											<div class="not-selected">종로</div>
-											<div class="not-selected">마포</div>
-											<div class="not-selected">영등포</div>
-											<div class="not-selected">관악</div>
-											<div class="not-selected">서초</div>
-											<div class="not-selected">강남</div>
-											<div class="not-selected">강동</div>
-											<div class="not-selected">강북</div>
-										</div>
-									</li>
-
-								</div>
-							</div>
-							<div class="manifier option-manify">
-								<i class="manifier-in bi bi-zoom-in"></i>
-							</div>
-
-						</div>
-						<div class="advice__divide__api"></div>
-					</div>
-					<div class="advice__calendar divide">
-						<div class="advice-navi navi">
-							<div class="navi__title">캘린더로 보기</div>
-							<div class="toggle option-toggle">
-								<div class="toggle--late">
-									<li class="toggle__switch">
-										<div class="selected"><span>최신순</span> </div>
-										<div class="select-things">
-											<div class="not-selected">마감순</div>
-										</div>
-									</li>
-								</div>
-								<div class="toggle--map">
-									<li class="toggle__switch">
-										<div class="selected"><span>7월</span> </div>
-										<div class="select-things">
-											<div class="not-selected">1월</div>
-											<div class="not-selected">2월</div>
-											<div class="not-selected">3월</div>
-											<div class="not-selected">4월</div>
-											<div class="not-selected">5월</div>
-											<div class="not-selected">6월</div>
-											<div class="not-selected">8월</div>
-											<div class="not-selected">9월</div>
-											<div class="not-selected">10월</div>
-											<div class="not-selected">11월</div>
-											<div class="not-selected">12월</div>
-										</div>
-									</li>
-
-								</div>
-							</div>
-							<div class="manifier option-manify">
-								<i class="manifier-in bi bi-zoom-in"></i>
-							</div>
-
-						</div>
-						<div class="advice__divide__api"></div>
-
-					</div>
-
-
-				</div>
-
-			</div>
-		</main>
-		<!---------------footer------------------->
-		<div class="footer"></div>
-		<!------------------------------------------------>
-		<!--       -->
+		</div>
+	</div> <i class="bt-slide left bi-chevron-left"></i>
+	<i class="bt-slide right bi-chevron-right"></i>
 	</div>
+	<!--map-->
+	<div class="map"></div>
+	<!--calendar-->
+	<div class="calendar"></div>
 
-
-</body>
-<script src="../js/index.js"></script>
-<script src="../js/common.js"></script>
+	</pdiv </body>
+	<script src="../js/index.js"></script>
+	<script src="../js/common.js"></script>
 
 </html>

@@ -1,22 +1,28 @@
-body{
-	height:100vh;
+body {
+    height: 100vh;
+    background-color: var(--main-point-color);
+}
+.header {
+    transform: scale(0.5);
+}
+.header__circle {
+    background-color: var(--main-font-color);
+}
+.form__title {
+    text-align: center;
+    color: var(--main-bg-color);
 }
 
-.form-title{
-	text-align: center;
-	color: var(--main-font-color);
+.form {
+    /* margin: 4em 0; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.form{
-	margin:4em 0;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-
-.form-wrapper{
-	width: 40%;
-	border: 1px solid red;
+.form-wrapper {
+    width: 40%;
+    border: 1px solid red;
 }
