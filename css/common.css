@@ -11,21 +11,24 @@
 
 body {
     width: 100%;
-    height: 1000vh;
     font-size: 16px;
     font-family: 'Noto Sans KR', sans-serif;
     background-color: var(--main-bg-color);
+}
+.home {
+    height: 1000vh;
     display: flex;
     flex-direction: row;
-
 }
-.basket{
+.basket {
     width: 23%;
     background-color: blue;
 }
-.main{
+.main {
     width: 77%;
-   
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .bt-slide {
@@ -46,7 +49,7 @@ body {
     left: 55px;
 }
 
-.bt-slide.right {ß
+.bt-slide.right {
     right: 55px;
 }
 
@@ -54,55 +57,97 @@ body {
 .header {
     width: 100%;
     display: flex;
-    `  /* justify-content: flex-end; */
     align-items: flex-end;
     flex-direction: column;
-    border: 1px solid var(--main-font-color);
+    position: relative;
 }
-.header__nav{
+.header__logo--wrapper {
+    width: 100%;
+    border-bottom: 2px solid var(--main-font-color);
+    display: flex;
+    justify-content: flex-end;
+}
+.header .header__logo {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    font-size: 8em;
-}
-.header__logo {
-    display: flex;
-    position: relative;
-    justify-content: space-evenly;
     align-items: center;
-    /* transform: scale(1);    */
+    justify-content: space-evenly;
+    width: 30%;
+    margin: 1em 0;
 }
-.header__title {
-    font-weight: 400;
-    font-size: 7em;
+.header .header__title {
+    font-size: 3em;
     color: var(--main-font-color);
+    opacity: 0.94;
 }
-.header__title:nth-child(1) {
-    letter-spacing: 0.08em;
+.header .header__title:nth-child(1) {
+    /* margin: 0 1em; */
 }
-.header__title:nth-child(3) {
-    font-weight: bolder
-    font-size: 8em;
-    letter-spacing: 0.01em;
-}
-.header__circle {
-    width: 5em;
-    height: 5em;
+.header .header__circle {
+    width: 50px;
+    height: 50px;
+    animation: none;
     border-radius: 50%;
-    margin: 0 2em;
     background-color: var(--main-point-color);
 }
-.write{
-    /* z-index: 2; */
+.write {
     cursor: pointer;
 }
+.header__nav--wrapper {
+    width: 100%;
+    border-bottom: 2px solid var(--main-font-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__mail {
+    font-size: 1.75em;
+    color: var(--main-font-color);
+    margin: 0 1.25em;
+}
+.header__nav {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 2.5em;
+    margin: 0.375em 0;
+}
 
-/**************navi ***********/
+/**************bookmark ***********/
+.book-mark {
+    z-index: 5;
+    transform: translateY(-100%);
+    color: white;
+    font-size: 1.75em;
+    width: 27%;
+    padding: 0.375em;
+    background-image: linear-gradient(-130deg, transparent 70px, var(--main-point-color) 0);
+}
+/**************view ***********/
+.view {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 500px;
+    border: 1px solid var(--main-font-color);
+}
 
-
-/********************** 반응형 설정 *********************/
-/********************** 반응형 설정 *********************/
-/********************** 반응형 설정 *********************/
+/********************** grid*********************/
+/********************** map*********************/
+.map {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border: 1px solid var(--main-font-color);
+}
+/********************** calendar*********************/
+.calendat {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border: 1px solid var(--main-font-color);
+}
 /********************** 반응형 설정 *********************/
 /********************** 반응형 설정 *********************/
 /********************** 반응형 설정 *********************/
@@ -138,4 +183,3 @@ body {
 
 @media (max-width: 575px) {
 }
-
