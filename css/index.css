@@ -1,20 +1,33 @@
 /********************** global *********************/
 
 /**************** view****************/
+.view{
+    border: 1px solid var(--main-font-color);
+    height: 800px;
+    
+}
+
 .view__wrapper{
+    position: relative;
+    overflow: hidden;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
-    height: 400px;
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    /* height: 800px; */
+    /* margin: 0.15em; */
 }
 .view__info{
     width: 50%;
 
 }
 .view__photo{
+    border: 1px solid red;
+
     width: 50%;
+    height: 700px;
+    background-size: contain;
+    object-fit: cover;
 }
 
 /********************** gallery *********************/

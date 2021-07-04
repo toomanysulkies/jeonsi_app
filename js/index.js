@@ -1,5 +1,6 @@
 slideGallery();
 onResize();
+onView();
 
 function slideGallery() {
     var $grid = $('.grid');
@@ -31,5 +32,15 @@ function onResize() {
         var width = $(this).innerWidth();
         var height = width * Number(ratio);
         $(this).innerHeight(height);
+    });
+}
+function onView() {
+    var $viewPhoto = $('.view__photo');
+    $viewPhoto.slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
     });
 }
