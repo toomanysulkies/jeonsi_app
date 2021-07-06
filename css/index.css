@@ -4,7 +4,12 @@
 .view{
     border: 1px solid var(--main-font-color);
     height: 800px;
+    position: relative;
+    top:5em;
     
+}
+.view>.book-mark{
+    ;
 }
 
 .view__wrapper{

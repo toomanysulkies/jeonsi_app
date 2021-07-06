@@ -116,6 +116,7 @@ body {
 
 /**************bookmark ***********/
 .book-mark {
+    position: absolute;
     z-index: 5;
     transform: translateY(-100%);
     color: white;
