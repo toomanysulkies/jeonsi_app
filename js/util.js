@@ -136,12 +136,16 @@ function getSwiper(el, opt) {
     }
 
     var swiper = new Swiper(el + ' .swiper-container', {
-        pagination: pagination,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
         navigation: navigation,
         autoplay: autoplay,
         loop: opt.loop === false ? false : true,
         speed: opt.speed || 500,
         slidesPerView: opt.break && opt.break > 5 ? opt.break - 4 : 1,
+        slidesPerColumn: 2,
         // slidesPerView: opt.break ? opt.break : 1,
         spaceBetween: opt.space === undefined ? 1 : opt.space,
         breakpoints: breakpoints,
